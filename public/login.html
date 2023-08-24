@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+<body class="h-screen flex flex-col">
+    <header class="flex justify-between items-center bg-indigo-700 text-white p-3">
+        <span class="font-semibold text-2xl">
+            <a href="">Tushirikiane</a>
+        </span>
+        <div class="flex items-center">
+            <nav class="mr-4 font-medium ">
+                <ul class="flex">
+                    <li class="mr-4">
+                        <a href="#">Home</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </header>
+
+        <!-- Sign in and log in form start -->
+        <div class="mt-4 flex-grow">
+            <div class="w-fit min-w-[300px] flex text-center mx-auto space-x-2 mb-4">
+                <span data-section="#login_container" id="login_btn" class="active_tab border border-indigo-600 cursor-pointer text-indigo-600 flex-1 py-1 rounded-full">Login</span>
+                <span data-section="#signup_container" id="signup_btn" class="border border-indigo-600 cursor-pointer text-indigo-600 flex-1 py-1 rounded-full">Sign up</span>
+            </div>
+
+            <!-- Login container start-->
+            <div id="login_container" class="flex flex-col text-center space-y-5 py-8 w-fit min-w-[300px] mx-auto rounded-xl shadow-lg">
+                <h2 class="font-bold text-2xl">Welcome back!</h2>
+                <form class="space-y-5 flex flex-col mx-auto" action="">
+                    <div class="text-left space-y-1">
+                        <label for="email_signup">Email:</label>
+                        <input class="border border-gray-200 rounded-full w-full pl-2 py-1 focus:outline-indigo-400" type="email" name="email" id="email_signup">
+                    </div>
+                    <div class="text-left space-y-1">
+                        <label for="password">Password:</label>
+                        <input class="border border-gray-200 rounded-full w-full pl-2 py-1 focus:outline-indigo-400" type="password" name="password" id="password">
+                    </div>
+                    <button class="bg-indigo-600 rounded-full text-white py-1" type="submit">Log in</button>
+                </form>
+
+                <div class="text-sm">
+                    <p>Don't have an account? <a class="text-indigo-500" id="signup_text" href="">Sign up</a></p>
+                    <a class="text-indigo-500" href="">Forgot Password?</a>
+                </div>
+                <div class="space-y-5 mx-4">
+                    <p>or</p>
+                    <a class="block">
+                        <span class="border border-gray-100 cursor-pointer rounded-full py-1 block shadow">
+                            <img class="inline-block" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+                            Sign in with google
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <!-- Login container end -->
+
+            <!-- Signup container start -->
+            <div id="signup_container" class="hidden flex flex-col text-center space-y-5 py-8 w-fit min-w-[300px] mx-auto mb-5 rounded-xl shadow-lg">
+                <h2 class="font-bold text-2xl">Create account</h2>
+                <form class="space-y-5 flex flex-col mx-4" action="">
+                    <div class="text-left space-y-1">
+                        <label for="first_name">First Name:</label>
+                        <input class="border border-gray-200 rounded-full w-full pl-2 py-1 focus:outline-indigo-400" type="first_name" name="first_name" id="first_name">
+                    </div>
+
+                    <div class="text-left space-y-1">
+                        <label for="middle_name">Middle Name:</label>
+                        <input class="border border-gray-200 rounded-full w-full pl-2 py-1 focus:outline-indigo-400" type="middle_name" name="middle_name" id="middle_name">
+                    </div>
+
+                    <div class="text-left space-y-1">
+                        <label for="last_name">Last Name:</label>
+                        <input class="border border-gray-200 rounded-full w-full pl-2 py-1 focus:outline-indigo-400" type="last_name" name="last_name" id="last_name">
+                    </div>
+
+                    <div class="text-left space-y-1">
+                        <label for="email">Email:</label>
+                        <input class="border border-gray-200 rounded-full w-full pl-2 py-1 focus:outline-indigo-400" type="email" name="email" id="email">
+                    </div>
+                    <div class="text-left space-y-1">
+                        <label for="password1">Password:</label>
+                        <input class="border border-gray-200 rounded-full w-full pl-2 py-1 focus:outline-indigo-400" type="password1" name="password1" id="password1">
+                    </div>
+                    <div class="text-left space-y-1">
+                        <label for="password2">Confirm Password:</label>
+                        <input class="border border-gray-200 rounded-full w-full pl-2 py-1 focus:outline-indigo-400" type="password2" name="password2" id="password2">
+                    </div>
+
+                    <button class="bg-indigo-600 rounded-full text-white py-1" type="submit">Sign up</button>
+                </form>
+
+                <div class="text-sm">
+                    <p>Have an account? <a class="text-indigo-500" id="login_text" href="">Login</a></p>
+                </div>
+                <div class="space-y-5 mx-4">
+                    <p>or</p>
+                    <a class="block ">
+                        <span class="border border-gray-100 cursor-pointer rounded-full py-1 block shadow">
+                            <img class="inline-block" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+                            Sign up with google
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <!-- Signup container end -->
+        </div>
+        <!-- Sign in and log in form end -->
+
+
+    <footer class="py-4 flex justify-center items-center text-white bg-indigo-600 ">
+        <span class="">Copyright © 2023</span>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

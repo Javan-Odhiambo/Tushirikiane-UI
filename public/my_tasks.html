@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tasks</title>
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+<body class="h-screen flex flex-col">
+    <header class="flex justify-between items-center bg-indigo-700 text-white p-3">
+        <span class="font-semibold text-2xl">
+            <a href="">Tushirikiane</a>
+        </span>
+        <div class="flex items-center">
+            <nav class="mr-4 font-medium ">
+                <ul class="flex">
+                    <li class="mr-4">
+                        <a href="#">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#">Tasks</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="relative">
+                <span id="profile" class="hover:cursor-pointer">
+                    <img class="rounded-full w-10" src="./images/profile" alt="Profile picture">
+                </span>
+                <div id="extras" class="hidden absolute right-5 bg-gray-100 rounded-md text-black text-sm py-2 px-4">
+                    <a class="hover:text-indigo-500 hover:border-b-2 hover:border-indigo-500" href="#">Edit Profile</a>
+                    <a class="hover:text-indigo-500 hover:border-b-2 hover:border-indigo-500" href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow flex flex-col items-center">
+        <h1 class="text-3xl font-bold my-4">My Tasks</h1>
+
+        <section class="border border-indigo-200 rounded-md overflow-hidden shadow mx-4 md:w-2/3 lg:w-1/2">
+
+            <div class="flex text-lg border-b border-indigo-200 font-semibold text-center">
+                <span id="in_progress_btn" data-section="#in_progress" class="hover:cursor-pointer flex-1 py-1 active_tab">In Progress</span>
+                <span id="completed_btn" data-section="#completed" class="hover:cursor-pointer flex-1 py-1">Completed</span>
+            </div>
+
+            <!-----Tasks container------->
+            <div class="flex">
+                <!---------------In Progress tasks container----------------------->
+                <div id="in_progress"> 
+
+                    <div class="border-b border-gray-200 p-2">
+                        <h3 class="text-xl font-bold">Implement Login</h3>
+                        <p class="text-gray-600 mb-2" >Description about the task that is to be done by this person/individual member within the given time</p>
+                        <div class="flex items-center justify-between">
+                            <p class=" font-semibold text-sm text-gray-700">Tushirikiane Project</p>
+                            <button class="py-1 px-3 bg-indigo-600 rounded-md text-white"> Mark as completed</button>
+                        </div>
+                    </div>
+    
+                    <div class="border-b border-gray-200 p-2">
+                        <h3 class="text-xl font-bold">Implement Login</h3>
+                        <p class="text-gray-600 mb-2" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit a quod aspernatur quaerat distinctio recusandae illo ipsum, placeat itaque debitis officiis, accusamus reprehenderit omnis et suscipit ea voluptates quis eius.</p>
+                        <div class="flex items-center justify-between">
+                            <p class=" font-semibold text-sm text-gray-700">Tushirikiane Project</p>
+                            <button class="py-1 px-3 bg-indigo-600 rounded-md text-white"> Mark as completed</button>
+                        </div>
+                    </div>
+    
+                    <div class="border-b border-gray-200 p-2">
+                        <h3 class="text-xl font-bold">Implement Login</h3>
+                        <p class="text-gray-600 mb-2" >Description about the task that is to be done by this person/individual member within the given time</p>
+                        <div class="flex items-center justify-between">
+                            <p class=" font-semibold text-sm text-gray-700">Tushirikiane Project</p>
+                            <button class="py-1 px-3 bg-indigo-600 rounded-md text-white"> Mark as completed</button>
+                        </div>
+                    </div>        
+                </div>
+                <!---------------In Progress tasks container End----------------------->
+
+                <!----------------Completed tasks container----------------------->
+                <div id="completed" class="hidden">
+
+                    <div class="border-b border-gray-200 p-2">
+                        <h3 class="text-xl font-bold">Implement Login</h3>
+                        <p class="text-gray-600 mb-2" >Description about the task that is to be done by this person/individual member within the given time</p>
+                        <div class="flex items-center justify-between">
+                            <p class=" font-semibold text-sm text-gray-700">Tushirikiane Project</p>
+                            <button class="py-1 px-3 bg-indigo-600 rounded-md text-white"> View</button>
+                        </div>
+                    </div>
+                </div>
+                <!---------------In Progress tasks container End----------------------->
+
+            </div>
+            <!-----Tasks container End------->
+            
+        </section>
+    </main>
+
+    <footer class="py-4 flex justify-center items-center text-white bg-indigo-600 ">
+        <span class="">Copyright © 2023</span>
+    </footer>
+
+    <script src="./js/my_tasks.js"></script>
+</body>
+
+</html>

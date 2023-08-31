@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+
+<body class="h-screen flex flex-col relative">
+    <header class="flex justify-between items-center bg-indigo-700 text-white p-3">
+        <span class="font-semibold text-2xl">
+            <a href="">Tushirikiane</a>
+        </span>
+        <div class="flex items-center space-x-3 ">
+            <nav class="font-medium ">
+                <ul class=" space-x-3 flex">
+                    <li class="">
+                        <a href="#">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#">Tasks</a>
+                    </li>
+                    <!-- Added to header-->
+                    <li>
+                        <span id="side_menu_open" class="md:hidden cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </span>
+                    </li>
+                    <!-- End -->
+                </ul>
+            </nav>
+            <div class="relative">
+                <span id="profile" class="hover:cursor-pointer">
+                    <img class="rounded-full w-10" src="./images/profile" alt="Profile picture">
+                </span>
+                <div id="extras"
+                    class="hidden z-30 absolute right-5 bg-gray-100 rounded-md text-black text-sm py-2 px-4">
+                    <!----Addded Z index--->
+                    <a class="hover:text-indigo-500 hover:border-b-2 hover:border-indigo-500" href="#">Profile</a>
+                    <a class="hover:text-indigo-500 hover:border-b-2 hover:border-indigo-500" href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow flex relative mb-5">
+        <div class="mx-auto md:mx-0 md:max-w-[calc(100%-230px)]">
+            <h1 class="text-3xl font-bold my-4 text-center">My Projects</h1>
+
+            <section class="border border-indigo-200 rounded-md shadow mx-4">
+                <!-----Projects container------->
+                <div class="">
+
+                    <div class="border-b border-gray-200 p-2">
+                        <h3 class="text-xl font-bold">Tushirikiane Project</h3>
+                        <p class="text-gray-600 mb-2">Description about the project that is to be done by this
+                            person/individual member within the given time</p>
+                        <div class="flex items-center justify-end">
+                            <a href="#">
+                                <button class="py-1 px-3 bg-indigo-600 rounded-md text-white"> Go to
+                                    project</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-gray-200 p-2">
+                        <h3 class="text-xl font-bold">Tushirikiane Project</h3>
+                        <p class="text-gray-600 mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit a
+                            quod aspernatur quaerat distinctio recusandae illo ipsum, placeat itaque debitis officiis,
+                            accusamus reprehenderit omnis et suscipit ea voluptates quis eius.</p>
+                        <div class="flex items-center justify-end">
+                            <a href="#">
+                                <button class="py-1 px-3 bg-indigo-600 rounded-md text-white"> Go to project</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-gray-200 p-2">
+                        <h3 class="text-xl font-bold">Tushirikiane Project</h3>
+                        <p class="text-gray-600 mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit a
+                            quod aspernatur quaerat distinctio recusandae illo ipsum, placeat itaque debitis officiis,
+                            accusamus reprehenderit omnis et suscipit ea voluptates quis eius.</p>
+                        <div class="flex items-center justify-end">
+                            <a href="#">
+                                <button class="py-1 px-3 bg-indigo-600 rounded-md text-white"> Go to project</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-gray-200 p-2">
+                        <h3 class="text-xl font-bold">Tushirikiane Project</h3>
+                        <p class="text-gray-600 mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit a
+                            quod aspernatur quaerat distinctio recusandae illo ipsum, placeat itaque debitis officiis,
+                            accusamus reprehenderit omnis et suscipit ea voluptates quis eius.</p>
+                        <div class="flex items-center justify-end">
+                            <a href="#">
+                                <button class="py-1 px-3 bg-indigo-600 rounded-md text-white"> Go to project</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-gray-200 p-2">
+                        <h3 class="text-xl font-bold">Tushirikiane Project</h3>
+                        <p class="text-gray-600 mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit a
+                            quod aspernatur quaerat distinctio recusandae illo ipsum, placeat itaque debitis officiis,
+                            accusamus reprehenderit omnis et suscipit ea voluptates quis eius.</p>
+                        <div class="flex items-center justify-end">
+                            <a href="#">
+                                <button class="py-1 px-3 bg-indigo-600 rounded-md text-white"> Go to project</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="border-b border-gray-200 p-2">
+                        <h3 class="text-xl font-bold">Tushirikiane Project</h3>
+                        <p class="text-gray-600 mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit a
+                            quod aspernatur quaerat distinctio recusandae illo ipsum, placeat itaque debitis officiis,
+                            accusamus reprehenderit omnis et suscipit ea voluptates quis eius.</p>
+                        <div class="flex items-center justify-end">
+                            <a href="#">
+                                <button class="py-1 px-3 bg-indigo-600 rounded-md text-white"> Go to project</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-gray-200 p-2">
+                        <h3 class="text-xl font-bold">Tushirikiane Project</h3>
+                        <p class="text-gray-600 mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit a
+                            quod aspernatur quaerat distinctio recusandae illo ipsum, placeat itaque debitis officiis,
+                            accusamus reprehenderit omnis et suscipit ea voluptates quis eius.</p>
+                        <div class="flex items-center justify-end">
+                            <a href="#">
+                                <button class="py-1 px-3 bg-indigo-600 rounded-md text-white"> Go to project</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="border-b border-gray-200 p-2">
+                        <h3 class="text-xl font-bold">Tushirikiane Project</h3>
+                        <p class="text-gray-600 mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit a
+                            quod aspernatur quaerat distinctio recusandae illo ipsum, placeat itaque debitis officiis,
+                            accusamus reprehenderit omnis et suscipit ea voluptates quis eius.</p>
+                        <div class="flex items-center justify-end">
+                            <a href="#">
+                                <button class="py-1 px-3 bg-indigo-600 rounded-md text-white"> Go to project</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-gray-200 p-2">
+                        <h3 class="text-xl font-bold">Tushirikiane Project</h3>
+                        <p class="text-gray-600 mb-2">Description about the task that is to be done by this
+                            person/individual member within the given time</p>
+                        <div class="flex items-center justify-end">
+                            <a href="#">
+                                <button class="py-1 px-3 bg-indigo-600 rounded-md text-white"> Go to project</button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-----Projects container End------->
+
+            </section>
+        </div>
+
+        <section id="side_menu"
+            class="hidden md:block h-full md:max-h-[400px] md:pb-5 bg-slate-100 absolute md:fixed right-0 md:right-5 z-10 min-w-[50%] md:min-w-[200px] max-w-[400px] md:min-w-xl md:mt-[70px]  pt-3 space-y-3 text-center transition-all duration-300 ease-in">
+            <span id="side_menu_close" class="cursor-pointer md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </span>
+            <div class="">
+                <ul>
+                    <li id="add_project_button" class="cursor-pointer" data-modal="#add_project_modal">Add Project</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-4 flex justify-center items-center text-white bg-indigo-600 ">
+        <span class="">Copyright © 2023</span>
+    </footer>
+
+    <!-- Modals -->
+    <div id="add_project_modal"
+        class="hidden rounded-lg shadow-lg absolute bg-white w-[80%] max-w-[450px] px-4 py-8 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <span id="add_project_modal_close" class="cursor-pointer absolute top-2 right-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </span>
+        <div>
+            <h4 class="text-lg font-semibold">Add a new Project</h4>
+            <form class="space-y-5 flex flex-col mx-auto" action="">
+                <div class="text-left space-y-1">
+                    <label for="title">Title:</label>
+                    <input class="border border-gray-400 rounded-full w-full pl-2 py-1 focus:outline-indigo-400"
+                        type="text" name="title" id="title">
+                </div>
+                <div class="text-left space-y-1">
+                    <label for="description">Description:</label>
+                    <input class="border border-gray-400 rounded-full w-full pl-2 py-1 focus:outline-indigo-400"
+                        type="text" name="description" id="description">
+                </div>
+                <button class="bg-indigo-600 rounded-full text-white py-1" type="submit">Create project</button>
+            </form>
+        </div>
+
+    </div>
+    <!-- Modals End -->
+
+    <script src="./js/main.js"></script>
+    <script src="./js/my_projects.js"></script>
+</body>
+
+</html>

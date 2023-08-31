@@ -6,7 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="./css/master.css">
 </head>
-<body class="h-screen flex flex-col">
+<body class="h-screen flex flex-col ">
     <header class="flex justify-between items-center bg-indigo-700 text-white p-3">
         <span class="font-semibold text-2xl">
             <a href="">Tushirikiane</a>
@@ -32,16 +32,16 @@
             </div>
 
             <!-- Login container start-->
-            <div id="login_container" class="flex flex-col text-center space-y-5 py-8 w-fit min-w-[300px] mx-auto rounded-xl shadow-lg">
-                <h2 class="font-bold text-2xl">Welcome back!</h2>
+            <div id="login_container" class="flex flex-col text-center space-y-5 py-8 w-fit min-w-[300px] mx-auto rounded-xl shadow-2xl">
+                <h2 class="font-bold text-2xl">Welcome Back!</h2>
                 <form class="space-y-5 flex flex-col mx-auto" action="">
                     <div class="text-left space-y-1">
                         <label for="email_signup">Email:</label>
-                        <input class="border border-gray-200 rounded-full w-full pl-2 py-1 focus:outline-indigo-400" type="email" name="email" id="email_signup">
+                        <input class="border border-gray-400 rounded-full w-full pl-2 py-1 focus:outline-indigo-400" type="email" name="email" id="email_signup">
                     </div>
                     <div class="text-left space-y-1">
                         <label for="password">Password:</label>
-                        <input class="border border-gray-200 rounded-full w-full pl-2 py-1 focus:outline-indigo-400" type="password" name="password" id="password">
+                        <input class="border border-gray-400 rounded-full w-full pl-2 py-1 focus:outline-indigo-400" type="password" name="password" id="password">
                     </div>
                     <button class="bg-indigo-600 rounded-full text-white py-1" type="submit">Log in</button>
                 </form>
@@ -63,35 +63,32 @@
             <!-- Login container end -->
 
             <!-- Signup container start -->
-            <div id="signup_container" class="hidden flex flex-col text-center space-y-5 py-8 w-fit min-w-[300px] mx-auto mb-5 rounded-xl shadow-lg">
-                <h2 class="font-bold text-2xl">Create account</h2>
-                <form class="space-y-5 flex flex-col mx-4" action="">
-                    <div class="text-left space-y-1">
-                        <label for="first_name">First Name:</label>
-                        <input class="border border-gray-200 rounded-full w-full pl-2 py-1 focus:outline-indigo-400" type="first_name" name="first_name" id="first_name">
+            <div id="signup_container" class="hidden flex flex-col text-center space-y-5 py-8 w-fit min-w-[300px] mx-auto mb-5 rounded-xl shadow-2xl">
+                <h2 class="font-bold text-2xl">Create Account</h2>
+                <form class="space-y-2 flex flex-col mx-4" action="">
+                    <div class="flex space-x-3">
+                        <div class="text-left space-y-1">
+                            <label for="first_name">First Name:</label>
+                            <input class="border border-gray-400 rounded-full w-full pl-2 py-1 focus:outline-indigo-400" type="first_name" name="first_name" id="first_name">
+                        </div>
+    
+                        <div class="text-left space-y-1">
+                            <label for="last_name">Last Name:</label>
+                            <input class="border border-gray-400 rounded-full w-full pl-2 py-1 focus:outline-indigo-400" type="last_name" name="last_name" id="last_name">
+                        </div>
                     </div>
-
-                    <div class="text-left space-y-1">
-                        <label for="middle_name">Middle Name:</label>
-                        <input class="border border-gray-200 rounded-full w-full pl-2 py-1 focus:outline-indigo-400" type="middle_name" name="middle_name" id="middle_name">
-                    </div>
-
-                    <div class="text-left space-y-1">
-                        <label for="last_name">Last Name:</label>
-                        <input class="border border-gray-200 rounded-full w-full pl-2 py-1 focus:outline-indigo-400" type="last_name" name="last_name" id="last_name">
-                    </div>
-
+        
                     <div class="text-left space-y-1">
                         <label for="email">Email:</label>
-                        <input class="border border-gray-200 rounded-full w-full pl-2 py-1 focus:outline-indigo-400" type="email" name="email" id="email">
+                        <input class="border border-gray-400 rounded-full w-full pl-2 py-1 focus:outline-indigo-400" type="email" name="email" id="email">
                     </div>
                     <div class="text-left space-y-1">
                         <label for="password1">Password:</label>
-                        <input class="border border-gray-200 rounded-full w-full pl-2 py-1 focus:outline-indigo-400" type="password1" name="password1" id="password1">
+                        <input class="border border-gray-400 rounded-full w-full pl-2 py-1 focus:outline-indigo-400" type="password1" name="password1" id="password1">
                     </div>
                     <div class="text-left space-y-1">
                         <label for="password2">Confirm Password:</label>
-                        <input class="border border-gray-200 rounded-full w-full pl-2 py-1 focus:outline-indigo-400" type="password2" name="password2" id="password2">
+                        <input class="border border-gray-400 rounded-full w-full pl-2 py-1 focus:outline-indigo-400" type="password2" name="password2" id="password2">
                     </div>
 
                     <button class="bg-indigo-600 rounded-full text-white py-1" type="submit">Sign up</button>
@@ -112,7 +109,7 @@
             </div>
             <!-- Signup container end -->
         </div>
-        <!-- Sign in and log in form end -->
+        <!-- Sign in and log in forms end -->
 
 
     <footer class="py-4 flex justify-center items-center text-white bg-indigo-600 ">

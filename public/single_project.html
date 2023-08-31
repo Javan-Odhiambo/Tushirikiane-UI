@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+
+<body class="h-screen flex flex-col">
+    <header class="flex justify-between items-center bg-indigo-700 text-white p-3">
+        <span class="font-semibold text-2xl">
+            <a href="">Tushirikiane</a>
+        </span>
+        <div class="flex items-center space-x-3 ">
+            <nav class="font-medium ">
+                <ul class=" space-x-3 flex">
+                    <li class="">
+                        <a href="#">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#">Tasks</a>
+                    </li>
+                    <!-- Added to header-->
+                    <li>
+                        <span id="side_menu_open" class="md:hidden cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </span>
+                    </li>
+                    <!-- End -->
+                </ul>
+            </nav>
+            <div class="relative">   
+                <span id="profile" class="hover:cursor-pointer">
+                    <img class="rounded-full w-10" src="./images/profile" alt="Profile picture">
+                </span>
+                <div id="extras"
+                    class="hidden z-30 absolute right-5 bg-gray-100 rounded-md text-black text-sm py-2 px-4">
+                    <!----Addded Z index--->
+                    <a class="hover:text-indigo-500 hover:border-b-2 hover:border-indigo-500" href="#">Profile</a>
+                    <a class="hover:text-indigo-500 hover:border-b-2 hover:border-indigo-500" href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow flex relative mb-5">
+        <div class="mx-auto md:mx-0 md:max-w-[calc(100%-230px)]">
+            <div class="m-4 space-y-4">
+                <h1 class="text-3xl font-bold text-center">Tushirikiane</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aut, neque voluptatem earum quia dolore aliquam dignissimos vero eum nulla enim beatae animi exercitationem! Asperiores itaque at tempora porro ut?</p>
+                <div class="flex justify-between items-center text-sm font-semibold">
+                    <p>Started on: 17th April 2023</p>
+                    <p class="rounded-full bg-green-600 text-white px-3 py-1">Active</p>
+                    <!-- <p class="rounded-full bg-yellow-500 text-white px-3 py-1">Archived</p> -->
+                    <p>4 Members</p>
+                </div>
+            </div>
+
+            <section class="border border-indigo-200 rounded-md  overflow-hidden shadow mx-4">
+
+                <div class="flex text-lg border-b border-indigo-200 font-semibold text-center">
+                    <span id="pending_btn" data-section="#pending" class="hover:cursor-pointer flex-1 py-1  border-r border-indigo-200 active_tab">Pending</span>
+                    <span id="assigned_btn" data-section="#assigned" class="hover:cursor-pointer flex-1 py-1 border-r border-indigo-200 ">Assigned</span>
+                    <span id="in_progress_btn" data-section="#in_progress" class="hover:cursor-pointer flex-1 py-1 border-r border-indigo-200 ">In progress</span>
+                    <span id="completed_btn" data-section="#completed" class="hover:cursor-pointer flex-1 py-1">Completed</span>
+                </div>
+
+                <!-----Project's tasks container------->
+                <div class="flex">
+                    <!---------------Pending tasks container----------------------->
+                    <div id="pending" class="w-full"> 
+
+                        <div class="border-b border-gray-200 p-2">
+                            <h3 class="text-xl font-bold">Implement Login</h3>
+                            <p class="text-gray-600 mb-2" >Description about the task that is to be done by this person/individual member within the given time</p>
+                            <div class="flex items-center justify-between">
+                                <button class="py-1 px-3 bg-indigo-600 rounded-md text-white"> Request</button>
+                            </div>
+                        </div>
+        
+                       
+                    </div>
+                    <!---------------Pending tasks container End----------------------->
+                 
+                    <!---------------Assigned tasks container----------------------->
+                    <div id="assigned" class="hidden w-full"> 
+
+                        <div class="border-b border-gray-200 p-2">
+                            <h3 class="text-xl font-bold">Write Models</h3>
+                            <p class="text-gray-600 mb-2">Lorem ipsum dolor Lorem ipsum dolor sit. sit amet consectetur, adipisicing elit. Aut, amet. Ex adipisci accusantium dicta repudiandae quos nobis. Debitis accusamus libero harum dolorem fugit, ea tempora, consequatur, enim beatae eos quas.</p>
+                            <div class="flex items-center justify-between text-gray-700 text-sm">
+                                <div class="flex items-center space-x-3">
+                                    <span class="w-8 h-8 bg-green-700 text-2xl font-semibold text-white flex items-center justify-center rounded-full">
+                                        G
+                                    </span>
+                                    <p class=" font-semibold">George Doe</p>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <p>Start: 9th Aug 12:00am</p>
+                                    <p>Due: 11th Aug 7:00pm</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                    <!---------------Assigned tasks container End----------------------->
+
+                    <!---------------In Progress tasks container----------------------->
+                    <div id="in_progress" class="hidden w-full"> 
+
+                        <div class="border-b border-gray-200 p-2">
+                            <h3 class="text-xl font-bold">Implement Login</h3>
+                            <p class="text-gray-600 mb-2" >Description about the task that is to be done by this person/individual member within the given time</p>
+                            <div class="flex items-center justify-between text-gray-700 text-sm">
+                                <div class="flex items-center space-x-3">
+                                    <img class="rounded-full w-8" src="./images/profile" alt="Profile picture">
+                                    <p class=" font-semibold">John Doe</p>
+                                </div>
+                                <div>
+                                    <p>Due: 11th Aug 7:00pm</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                       
+                    </div>
+                    <!---------------In Progress tasks container End----------------------->
+
+                    <!----------------Completed tasks container----------------------->
+                    <div id="completed" class="hidden w-full">
+
+                        <div class="border-b border-gray-200 p-2">
+                            <h3 class="text-xl font-bold">Set up payment</h3>
+                            <p class="text-gray-600 mb-2" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, vel! Lorem, ipsum dolor.</p>
+                            <div class="flex items-center justify-between text-gray-700 text-sm">
+                                <div class="flex items-center space-x-3">
+                                    <img class="rounded-full w-8" src="./images/profile" alt="Profile picture">
+                                    <p class=" font-semibold">Jane Doe</p>
+                                </div>
+                                <div>
+                                    <p>Completed on: 11th Aug 7:00pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---------------In Progress tasks container End----------------------->
+
+                </div>
+                <!-----Project's tasks container End------->
+
+            </section>
+        </div>
+
+        <section id="side_menu"
+            class="hidden md:block h-full md:max-h-[400px] md:pb-5 bg-slate-100 absolute md:fixed right-0 md:right-5 z-10 min-w-[50%] md:min-w-[200px] max-w-[400px] md:min-w-xl md:mt-[70px]  pt-3 space-y-3 text-center transition-all duration-300 ease-in">
+            <span id="side_menu_close" class="cursor-pointer md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </span>
+            <div class="">
+                <ul>
+                    <li id="add_task_button" class="cursor-pointer" data-modal="#add_task_modal">Add Task</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-4 flex justify-center items-center text-white bg-indigo-600 ">
+        <span class="">Copyright © 2023</span>
+    </footer>
+
+    <!-- Modals -->
+    <div id="add_task_modal"
+        class="hidden rounded-lg shadow-lg absolute bg-white w-[80%] max-w-[450px] px-4 py-8 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <span id="add_task_modal_close" class="cursor-pointer absolute top-2 right-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </span>
+        <div>
+            <h4 class="text-lg font-semibold">Add a new task</h4>
+            <form class="space-y-5 flex flex-col mx-auto" action="">
+                <div class="text-left space-y-1">
+                    <label for="title">Title:</label>
+                    <input class="border border-gray-400 rounded-full w-full pl-2 py-1 focus:outline-indigo-400"
+                        type="text" name="title" id="title">
+                </div>
+                <div class="text-left space-y-1">
+                    <label for="description">Description:</label>
+                    <input class="border border-gray-400 rounded-full w-full pl-2 py-1 focus:outline-indigo-400"
+                        type="text" name="description" id="description">
+                </div>
+                <button class="bg-indigo-600 rounded-full text-white py-1" type="submit">Create project</button>
+            </form>
+        </div>
+
+    </div>
+    <!-- Modals End -->
+
+    <script src="./js/main.js"></script>
+    <script src="./js/single_project.js"></script>
+</body>
+
+</html>

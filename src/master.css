@@ -6,3 +6,33 @@
     @apply bg-indigo-500 text-white;
 }
 
+.message {
+    @apply flex justify-between font-semibold py-3 px-4 border rounded-md text-white;
+    animation: hideAnimation 2s ease-in 5s;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes hideAnimation {
+    to {
+        opacity: 0;
+        display: none;
+    }
+  }
+
+.message_info {
+    @apply bg-blue-400;
+}
+
+.message_success {
+    @apply bg-green-400;
+}
+
+.message_warning {
+    @apply bg-yellow-400;
+}
+
+.message_error {
+    @apply bg-red-400;
+}
+
+

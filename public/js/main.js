@@ -1,5 +1,4 @@
 const toggler = (e) => {
-
     const current = e.target;
     const currentSection = document.querySelector(current.dataset.section);
     const siblings = current.parentNode.children;

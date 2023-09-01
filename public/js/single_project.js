@@ -35,7 +35,12 @@ inProgressBtn.addEventListener("click", toggler);
 const memberMenus = document.querySelectorAll(".member_menu");
 memberMenus.forEach((menu) => {
     menu.addEventListener("click", (e) => {
-        e.target.parentNode.parentNode.lastElementChild.classList.toggle("hidden");
+        let span = e.target.parentNode;
+        while (span.tagName !== "SPAN")
+        {
+            span = span.parentNode;
+        }
+        span.nextElementSibling.classList.toggle("hidden");
     })
 })
 
@@ -77,7 +82,6 @@ addMemberInput.addEventListener("keypress", (e) => {
             });
             memberEmail.appendChild(removeBtn);
             
-
             emails.push(text);
             document.querySelector("#new_members_container").appendChild(memberEmail);
             e.target.value = "";
@@ -90,8 +94,22 @@ addMemberForm.addEventListener("submit", (e) => {
     e.preventDefault();
     if (addMemberInput.value && emailIsValid(addMemberInput.value))
         emails.push(addMemberInput.value)
-    
+
     addMemberInput.value = emails.join(" ");
     addMemberForm.submit();
 
 })
+
+const closeMessageBtns = document.querySelectorAll(".message_close");
+closeMessageBtns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+        let li = e.target.parentNode;
+        while (li.tagName !== "LI")
+        {
+            li = li.parentNode;
+        }
+        li.remove();
+    })
+})
+
+

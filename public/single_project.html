@@ -9,6 +9,7 @@
 </head>
 
 <body class="h-screen flex flex-col">
+    <!-- Header Start -->
     <header class="flex justify-between items-center bg-indigo-700 text-white p-3">
         <span class="font-semibold text-2xl">
             <a href="">Tushirikiane</a>
@@ -48,9 +49,77 @@
             </div>
         </div>
     </header>
+    <!-- Header End -->
+
 
     <main class="flex-grow flex relative mb-5">
+            <!-- Messages container Start -->
+    <div id="messages_container" class="absolute w-full" >
+        <ul class="space-y-2 mx-5 mt-1">
+            <li class="message message_info">
+                <p>Info: Hello</p>
+                <span class="message_close cursor-pointer md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </span>
+            </li>
+            <li class="message message_success">
+                <p>Success: Test</p>
+                <span class="message_close cursor-pointer md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </span>
+            </li>
+            <li class="message message_warning">
+                <p>Warning: test</p>
+                <span class="message_close cursor-pointer md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </span>
+            </li>
+            <li class="message message_error">
+                <p>Error: test</p>
+                <span class="message_close cursor-pointer md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </span>
+            </li>
+        </ul>
+
+        <!-- Django sample 
+        {% if messages %}
+            <ul class="space-y-2 mx-5 mt-1">
+                {% for message in messages %}
+                    <li {% if message.tags %} class="message {{ message.tags }}"{% endif %}>
+                    <p> <span class="capitalize">{{ message.level_tag }}</span>: {{ message }}</p>
+                    <span class="message_close cursor-pointer md:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </span>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        
+        -->
+    </div>
+    <!-- Messages container end -->
+
+
+        <!-- Main content start-->
         <div class="mx-auto md:mx-0 md:max-w-[calc(100%-230px)]">
+
+            <!-- Project info start -->
             <div class="m-4 space-y-4">
                 <h1 class="text-3xl font-bold text-center">Code Craft </h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aut, neque voluptatem earum quia
@@ -63,9 +132,10 @@
                     <p>4 Members</p>
                 </div>
             </div>
+            <!-- Project info End -->
 
             <section class="border border-indigo-200 rounded-md  overflow-hidden shadow mx-4">
-
+                <!-- Task headings container Start-->
                 <div class="flex text-lg border-b border-indigo-200 font-semibold text-center">
                     <span id="pending_btn" data-section="#pending"
                         class="hover:cursor-pointer flex-1 py-1  border-r border-indigo-200 active_tab">Pending</span>
@@ -76,9 +146,11 @@
                     <span id="completed_btn" data-section="#completed"
                         class="hover:cursor-pointer flex-1 py-1">Completed</span>
                 </div>
+                <!-- Task headings container End-->
 
                 <!-----Project's tasks container------->
                 <div class="flex">
+
                     <!---------------Pending tasks container----------------------->
                     <div id="pending" class="w-full">
 
@@ -90,7 +162,15 @@
                                 <button class="py-1 px-3 bg-indigo-600 rounded-md text-white"> Request</button>
                             </div>
                         </div>
-
+                        
+                        <div class="border-b border-gray-200 p-2">
+                            <h3 class="text-xl font-bold">Implement Login</h3>
+                            <p class="text-gray-600 mb-2">Description about the task that is to be done by this
+                                person/individual member within the given time</p>
+                            <div class="flex items-center justify-between">
+                                <button class="py-1 px-3 bg-indigo-600 rounded-md text-white"> Request</button>
+                            </div>
+                        </div>
 
                     </div>
                     <!---------------Pending tasks container End----------------------->
@@ -166,10 +246,11 @@
 
                 </div>
                 <!-----Project's tasks container End------->
-
             </section>
         </div>
+        <!-- Main content start-->
 
+        <!-- Side Menu Start -->
         <section id="side_menu"
             class="hidden md:block h-full md:max-h-[400px] md:pb-5 bg-slate-100 md:bg-white absolute md:fixed right-0 md:right-5 z-10 min-w-[50%] md:min-w-[200px] max-w-[400px] md:min-w-xl md:mt-[70px]  pt-3 space-y-3 text-center transition-all duration-300 ease-in">
             <span id="side_menu_close" class="cursor-pointer md:hidden">
@@ -209,6 +290,7 @@
                 </ul>
             </div>
         </section>
+        <!-- Side Menu End -->
 
     </main>
 
@@ -249,11 +331,16 @@
                                 </svg>
                             </span>
                             <div
-                                class="hidden bg-gray-200 rounded-lg p-3 min-w-fit absolute left-[-120px] bottom-[-50px]">
+                                class="hidden bg-white rounded-lg shadow-lg overflow-hidden min-w-fit absolute left-[-105px] bottom-[-70px]">
                                 <a href="">
                                     <p
-                                        class="whitespace-nowrap text-xs font-semibold text-red-600 px-2 py-1 rounded-full border hover:border-red-600">
+                                        class="whitespace-nowrap text-xs font-semibold hover:bg-red-500 hover:text-white px-3 py-2 ">
                                         Remove member</p>
+                                </a>
+                                <a href="">
+                                    <p
+                                        class="whitespace-nowrap text-xs font-semibold px-3 py-2 hover:bg-indigo-500 hover:text-white">
+                                        Make admin</p>
                                 </a>
                             </div>
                         </span>
@@ -337,7 +424,7 @@
         </div>
 
     </div>
-    <!-- View Members Modal Start -->
+    <!-- View Members Modal End -->
 
     <!-- Add Task Modal Start -->
     <div id="add_task_modal"
@@ -419,7 +506,7 @@
         </div>
 
     </div>
-    <!-- Add Member Modal Start -->
+    <!-- Add Member Modal End -->
 
     <!-- View Requests Modal Start -->
     <div id="view_requests_modal"
@@ -608,7 +695,7 @@
         </div>
 
     </div>
-    <!-- View Requests Modal Start -->
+    <!-- View Requests Modal End -->
 
     <!-- Modals End -->
 

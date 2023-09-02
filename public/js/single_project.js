@@ -3,13 +3,13 @@ const addMemberBtn = document.querySelector("#add_member_btn");
 const viewMembersBtn = document.querySelector("#view_members_btn");
 const viewRequstsBtn = document.querySelector("#view_requests_btn");
 
-const ModalCloseBtns = document.querySelectorAll(".modal_close_btn");
 
 addTaskBtn.addEventListener("click", showModal);
 addMemberBtn.addEventListener("click", showModal);
 viewMembersBtn.addEventListener("click", showModal);
 viewRequstsBtn.addEventListener("click", showModal);
 
+const ModalCloseBtns = document.querySelectorAll(".modal_close_btn");
 ModalCloseBtns.forEach((closeBtn) => {
     closeBtn.addEventListener("click", (e) => {
         let  modal = e.target.parentNode;
@@ -20,17 +20,6 @@ ModalCloseBtns.forEach((closeBtn) => {
         document.querySelector("main").classList.remove("blur-sm");
     })
 })
-
-
-const pendingBtn = document.querySelector("#pending_btn");
-const assignedBtn = document.querySelector("#assigned_btn");
-const inProgressBtn = document.querySelector("#in_progress_btn");
-const completedBtn = document.querySelector("#completed_btn");
-
-pendingBtn.addEventListener("click", toggler);
-assignedBtn.addEventListener("click", toggler); 
-completedBtn.addEventListener("click", toggler);
-inProgressBtn.addEventListener("click", toggler);
 
 const memberMenus = document.querySelectorAll(".member_menu");
 memberMenus.forEach((menu) => {
@@ -111,5 +100,3 @@ closeMessageBtns.forEach((btn) => {
         li.remove();
     })
 })
-
-

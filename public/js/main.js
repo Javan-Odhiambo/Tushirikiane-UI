@@ -20,6 +20,13 @@ const toggler = (e) => {
     currentSection.classList.remove("hidden");
 }
 
+const headingBtns = document.querySelectorAll(".heading_btn");
+if (headingBtns) {
+    headingBtns.forEach((btn) => {
+        btn.addEventListener("click", toggler);
+    })
+}
+
 const showModal = (e) => {
     closeSideMenuBtn.click();
     const currentModal = document.querySelector(e.target.dataset.modal);

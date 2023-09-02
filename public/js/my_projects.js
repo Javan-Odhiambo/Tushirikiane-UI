@@ -7,4 +7,3 @@ addProjectModalClose.addEventListener("click", (e) => {
     document.querySelector("#add_project_modal").classList.add("hidden")
     document.querySelector("main").classList.remove("blur-sm")
 })
-

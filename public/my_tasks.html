@@ -40,14 +40,55 @@
         <section class="border border-indigo-200 rounded-md overflow-hidden shadow mx-4 md:w-2/3 lg:w-1/2">
 
             <div class="flex text-lg border-b border-indigo-200 font-semibold text-center">
-                <span id="in_progress_btn" data-section="#in_progress" class="hover:cursor-pointer flex-1 py-1 active_tab">In Progress</span>
-                <span id="completed_btn" data-section="#completed" class="hover:cursor-pointer flex-1 py-1">Completed</span>
+                <span id="assigned_btn" data-section="#assigned" class="heading_btn border-r border-indigo-200 hover:cursor-pointer flex-1 py-1 active_tab">Assigned</span>
+                <span id="in_progress_btn" data-section="#in_progress" class="heading_btn border-r border-indigo-200 hover:cursor-pointer flex-1 py-1">In Progress</span>
+                <span id="completed_btn" data-section="#completed" class="heading_btn hover:cursor-pointer flex-1 py-1">Completed</span>
             </div>
 
             <!-----Tasks container------->
             <div class="flex">
+
+                <!---------------Assigned tasks container----------------------->
+                <div id="assigned"> 
+
+                    <div class="border-b border-gray-200 p-2">
+                        <h3 class="text-xl font-bold">Implement Login</h3>
+                        <p class="text-gray-600 mb-2" >Description about the task that is to be done by this person/individual member within the given time</p>
+                        <div class="flex items-center justify-between">
+                            <p class=" font-semibold text-sm text-gray-700">Tushirikiane Project</p>
+                             <a href="">
+                                <button class="py-1 px-3 bg-indigo-600 rounded-md text-white"> Start</button>
+                             </a>
+                        </div>
+                    </div>
+    
+                    <div class="border-b border-gray-200 p-2">
+                        <h3 class="text-xl font-bold">Implement Login</h3>
+                        <p class="text-gray-600 mb-2" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit a quod aspernatur quaerat distinctio recusandae illo ipsum, placeat itaque debitis officiis, accusamus reprehenderit omnis et suscipit ea voluptates quis eius.</p>
+                        <div class="flex items-center justify-between">
+                            <p class=" font-semibold text-sm text-gray-700">Tushirikiane Project</p>
+                             <a href="">
+                                <button class="py-1 px-3 bg-indigo-600 rounded-md text-white"> Start</button>
+                             </a>
+                        </div>
+                    </div>
+    
+                    <div class="border-b border-gray-200 p-2">
+                        <h3 class="text-xl font-bold">Implement Login</h3>
+                        <p class="text-gray-600 mb-2" >Description about the task that is to be done by this person/individual member within the given time</p>
+                        <div class="flex items-center justify-between">
+                            <p class=" font-semibold text-sm text-gray-700">Tushirikiane Project</p>
+                             <a href="">
+                                <button class="py-1 px-3 bg-indigo-600 rounded-md text-white"> Start</button>
+                             </a>
+                        </div>
+                    </div>        
+                </div>
+                <!---------------Assigned tasks container End----------------------->
+
+
                 <!---------------In Progress tasks container----------------------->
-                <div id="in_progress"> 
+                <div id="in_progress" class="hidden"> 
 
                     <div class="border-b border-gray-200 p-2">
                         <h3 class="text-xl font-bold">Implement Login</h3>
